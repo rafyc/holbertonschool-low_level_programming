@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
-*com
+* com
 */
 int main(void)
 {
