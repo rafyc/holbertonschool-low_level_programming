@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
-* com
+* main - the enter point fonction
+* return 0
 */
 int main(void)
 {
