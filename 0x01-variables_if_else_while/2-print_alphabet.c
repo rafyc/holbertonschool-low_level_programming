@@ -11,8 +11,9 @@ int main(void)
 	/* while loop execution */
 	while (a < 123)
 	{
-		putchar(a,"\n");
+		putchar(a);
 		a++;
+		putchar('\n');
 	}
 	return (0);
 }
