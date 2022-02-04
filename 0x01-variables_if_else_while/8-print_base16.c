@@ -10,7 +10,7 @@ int main(void)
 	int a = 48;
 	int b = 97;
 	/* while loop execution */
-	while (a > 58)
+	while (a < 58)
 	{
 		putchar(a);
 		a++;
