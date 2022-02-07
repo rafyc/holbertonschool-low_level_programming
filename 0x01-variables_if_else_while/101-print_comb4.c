@@ -3,12 +3,14 @@
 /**
 * main - main
 * Return: 0
-*/ 
+*/
+
 int main(void)
 {
 	int a = 48;
 	int b = 49;
 	int c = 50;
+
 	while (a < 56)
 	{
 		putchar(a);
