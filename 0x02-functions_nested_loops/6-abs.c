@@ -3,12 +3,11 @@
 /**
 *_abs - Main functioin
 * Return: 0
-* @int: paramètre
+* @n: paramètre
 */
 
-int _abs(int)
+int _abs(int n)
 {
-	int n;
 
 	if (n >= 0)
 	{
