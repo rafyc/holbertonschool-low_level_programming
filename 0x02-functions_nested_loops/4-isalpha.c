@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _islower - Main function
+* _isalpha - Main function
 * Return: 1 ou 0
 * @c: caractere à tester
 */
