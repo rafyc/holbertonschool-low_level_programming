@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * times_table - prints the times table of an integer starting with zero
- *
- * Return: Always 0.
+ * times_table - main
+ * Return: rien
  */
 
 void times_table(void)
