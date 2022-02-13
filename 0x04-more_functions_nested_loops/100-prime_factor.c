@@ -23,6 +23,6 @@ int main(void)
 			bf = i;
 		}
 	}
-	printf("%ld", bf);
+	printf("%ld\n", bf);
 	return (0);
 }
