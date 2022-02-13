@@ -18,4 +18,5 @@ int main(void)
 		}
 		printf("%d\n", diviseur);
 		return (0);
+	}
 }
