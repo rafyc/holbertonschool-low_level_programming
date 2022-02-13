@@ -1,28 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - print prime factor of the number "612852475143"
- *
- * Return: void.
- */
-
+* main - void
+* Return: zero 0.
+*/
 int main(void)
 {
-	int i;
-	long int bf, n;
-
-	i = 2;
-	n = 612852475143;
-	bf = 0;
-
-	for (i = 3; i <= n; i += 2)
+	int diviseur;
+	long int nombre = 612852475143;
 	{
-		while (n % i == 0)
+		for (diviseur = 2; nombre > diviseur; diviseur++)
 		{
-			n = n / i;
-			bf = i;
+			while (nombre % diviseur == 0)
+			{
+				nombre = (nombre / diviseur);
+			}
 		}
-	}
-	printf("%ld\n", bf);
-	return (0);
+		printf("%d\n", diviseur);
+		return (0);
 }
