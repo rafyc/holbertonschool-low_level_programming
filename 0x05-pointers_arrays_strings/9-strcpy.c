@@ -3,7 +3,8 @@
 
 /**
  * *_strcpy - main
- * @*dest : param 1
+ * @dest : param 1
+ * @src : param 2
  * Return: Always 0.
  */
 
@@ -15,5 +16,5 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[i] = src[i];
 	}
-	return(dest);
+	return (dest);
 }
