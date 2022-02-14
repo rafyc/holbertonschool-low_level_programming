@@ -7,5 +7,6 @@
 
 int _strlen(char *s)
 {
-	return(*s);
+	char str = *s;
+	return(str);
 }
