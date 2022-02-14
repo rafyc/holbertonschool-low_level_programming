@@ -2,7 +2,7 @@
 
 /**
  * puts_half - main function
- *
+ * @str: test
  * Return: Always 0.
  */
 
