@@ -1,12 +1,17 @@
 #include "main.h"
 
 /**
- * int _strlen - main proto
+ * _strlen - main proto
  * @s: param
  */
 
 int _strlen(char *s)
 {
-	char str = *s;
-	return(str);
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return(i);
 }
