@@ -2,6 +2,7 @@
 
 /**
  * _strlen - main proto
+ * Return: i
  * @s: param
  */
 
@@ -13,5 +14,5 @@ int _strlen(char *s)
 	{
 		i++;
 	}
-	return(i);
+	return (i);
 }
