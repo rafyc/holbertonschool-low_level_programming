@@ -6,20 +6,19 @@
  * Return: Always 0.
  */
 
-void print_rev(char *s) 
+void print_rev(char *s)
 {
 	int i = 0;
-	int b = 0;
 
 	while (s[i] != '\0')
 	{
-		i++;		
+		i++;
 	}
 
-	while (s[i] >= b )
+	while (s[i] >= 0)
 	{
 		_putchar(s[i]);
 		i--;
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
