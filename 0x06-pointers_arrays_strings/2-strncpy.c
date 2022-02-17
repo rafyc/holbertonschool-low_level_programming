@@ -1,22 +1,22 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * _strcmp - main function
- * @s1:tab param 1
- * @s2:tab param 2
- * Return: Always 0.
+ * _strncpy - fonction
+ * @dest: para
+ * @src: para
+ * @n: para
+ * Return: 0
  */
-
-int _strcmp(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0;
 
-	while (s1[i] != '\0' && s2[i] != '\0')
+	for (i = 0; src[i] != '\0' && i < n; i++)
 	{
-		if (s1[i] != s2[i])
-			break;
-		i++;
+		dest[i] = src[i];
 	}
-	return (s1[i] - s2[i]);
+	for (; i < n; i++)
+	{
+		dest[i] = '\0';
+	}
+	return (dest);
 }
