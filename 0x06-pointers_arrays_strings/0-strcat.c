@@ -3,9 +3,9 @@
 
 /**
  * _strcat - main proto
- * @dest:
- * 
- * Return: Always 0.
+ * @dest: param 1
+ * @src : param 2
+ * Return: dest
  */
 
 char *_strcat(char *dest, char *src)
