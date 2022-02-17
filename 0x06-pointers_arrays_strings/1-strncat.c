@@ -3,8 +3,9 @@
 
 /**
  * _strcat - main proto
- * @dest:
- * 
+ * @dest: param1
+ * @src : param2
+ * @n : param 3 n bytes
  * Return: Always 0.
  */
 char *_strncat(char *dest, char *src, int n)
