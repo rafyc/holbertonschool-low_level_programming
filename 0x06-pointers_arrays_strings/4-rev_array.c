@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_array - main
+ * reverse_array - main
  * @a: an array of integers
  * @n: the number of elements to swap
  * Return: nothing.
  */
 
-void print_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int i = 0;
 	int j;
