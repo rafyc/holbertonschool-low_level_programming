@@ -3,8 +3,8 @@
 
 /**
  * _strcmp - main function
- * @s1: tab param 1
- * @s2: tab param 2
+ * @s1:tab param 1
+ * @s2:tab param 2
  * Return: Always 0.
  */
 
