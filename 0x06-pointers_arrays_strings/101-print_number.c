@@ -8,7 +8,7 @@
 
 void print_number(int n)
 {
-	int div = 1;
+	long div = 1;
 
 	if (n < 0)
 	{
@@ -25,5 +25,4 @@ void print_number(int n)
 		n = n % div;
 		div = div / 10;
 	}
-	_putchar('\n');
 }
