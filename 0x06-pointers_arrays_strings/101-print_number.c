@@ -10,6 +10,10 @@ void print_number(int n)
 {
 	int div = 1;
 
+	if (n == -2147483647)
+	{
+		n = n + 1;
+	}
 	if (n < 0)
 	{
 		_putchar('-');
