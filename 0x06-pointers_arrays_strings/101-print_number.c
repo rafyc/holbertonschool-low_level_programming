@@ -12,7 +12,7 @@ void print_number(int n)
 
 	if (n == -2147483647)
 	{
-		n = n + 1;
+		n = -n + 1;
 	}
 	if (n < 0)
 	{
