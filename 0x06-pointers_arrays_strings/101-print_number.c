@@ -8,7 +8,7 @@
 
 void print_number(int n)
 {
-	unsigned int div = 1;
+	long long div = 1;
 
 	if (n < 0)
 	{
