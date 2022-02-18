@@ -25,4 +25,5 @@ void print_number(int n)
 		n = n % div;
 		div = div / 10;
 	}
+	_putchar('\n');
 }
