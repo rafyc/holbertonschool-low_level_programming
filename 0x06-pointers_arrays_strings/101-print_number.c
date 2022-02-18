@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_number - main proto
+ * @n: param
+ * Return: void
  */
 
 void print_number(int n)
@@ -14,13 +14,11 @@ void print_number(int n)
 	{
 		_putchar('-');
 		n = -n;
-			
 	}
 	while (n / (div * 10) != 0)
 	{
 		div = div * 10;
 	}
-	
 	while (div > 0)
 	{
 		_putchar(n / div + '0');
