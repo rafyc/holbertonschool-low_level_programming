@@ -18,8 +18,5 @@ char *_strchr(char *s, char c)
 			break;
 		}
 	}
-	if (s[i] == c)
 		return (s + i);
-
-	return (0x0);
 }
