@@ -4,10 +4,10 @@
  * _strspn - main function
  * @s: param 1
  * @accept: param 2
- * Return: 
+ * Return: k
 */
 
- unsigned int _strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	int i = 0;
 	int j = 0;
@@ -22,7 +22,7 @@
 			{
 				if (s[i] == accept[j])
 				k++;
-			}	
+			}
 		}
 	}
 	return (k);
