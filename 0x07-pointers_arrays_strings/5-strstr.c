@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _strstr - main function
  * @haystack: param1
@@ -12,21 +12,26 @@ char *_strstr(char *haystack, char *needle)
 	int i = 0;
 	int j = 0;
 
-	while (needle[j] != '\0')
+	while (haystack[i] != '\0')
 	{
-		j++;
-	}
-	while (*haystack)
-	{
-		for (i = 0; needle[i] != '\0'; i++)
+		j = 0;
+		if (haystack[i] == needle[j])
 		{
-			if (haystack[i] != needle[i])
-				break;
+			while (needle[j] != '\0' &&  haystack[i + j] == needle[j])
+			{
+				j++;
+			}
 		}
-		if (i != j)
-			haystack++;
 		else
-			return (haystack);
+		{
+			i++;
+		}
+		if (needle[j] == '\0')
+		{
+			return (&haystack[i]);
+		}
+		else
+			i++;
 	}
 	return (0);
 }
