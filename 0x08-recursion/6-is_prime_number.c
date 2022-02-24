@@ -1,28 +1,28 @@
 #include "main.h"
 
 /**
- * _sqrt - calculate the square
+ * prime - calculate the prime
  * @n: base number
  * @x: increment
- * Return: square root
+ * Return: is prime
  */
 
 
-int _sqrt(int n, int x)
+int prime(int n, int x)
 {
 	if (n % x == 0)
 	{
 		return (0);
 	}
-	if (x = n)
+	if (x > n / 2)
 	{
 		return (1);
 	}
-	return (_sqrt(n, x + 1));
+	return (prime(n, x + 1));
 }
 
 /**
- * _sqrt_recursion - calculate the whole function
+ * is_prime_number - calculate the whole function
  * @n: base number
  * Return: square root
  */
