@@ -4,15 +4,14 @@
 
 /**
  * create_array - prototype
- * @char: param1
+ * @c: param1
  * @size: param2
- *
- * Return: Nothing.
+ * Return: str
  */
 
 char *create_array(unsigned int size, char c)
 {
-	unsigned int i;
+	unsigned int i = 0;
 	char *str;
 
 	str = malloc(size * sizeof(char));
@@ -28,5 +27,5 @@ char *create_array(unsigned int size, char c)
 	{
 		str[i] = c;
 	}
-	return(str);
+	return (str);
 }
