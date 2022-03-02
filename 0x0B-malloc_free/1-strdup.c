@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -17,12 +17,12 @@ char *_strdup(char *str)
 	if (str == 0)
 		return (NULL);
 
-	while (str[i] <= '\0')
+	while (str[i] != '\0')
 	{
 		i++;
 	}
 
-	cpy = malloc(i * sizeof(char));
+	cpy = malloc(i * sizeof(char) + 1);
 
 	if (cpy == 0)
 		return (NULL);
