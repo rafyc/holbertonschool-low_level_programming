@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -22,7 +22,7 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	cpy = malloc(i * sizeof(char) + 1);
+	cpy = malloc((i + 1) * sizeof(char));
 
 	if (cpy == 0)
 		return (NULL);
