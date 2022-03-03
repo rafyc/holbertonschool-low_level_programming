@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * calloc - main proto
+ * _calloc - main proto
  * @size: param 1
  * @nmemb: param 2
  * Return: p;
