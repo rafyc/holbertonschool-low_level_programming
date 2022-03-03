@@ -7,8 +7,7 @@
  * array_range - prints buffer in hexa
  * @min: param 1
  * @max: param2
- *
- * Return: Nothing.
+ * Return: arr
  */
 
 int *array_range(int min, int max)
@@ -23,16 +22,9 @@ int *array_range(int min, int max)
 	arr = malloc(sizeof(int) * size);
 	if (arr == 0)
 		return (NULL);
-/**
-for (i = 0; i < size; i++)
-{
-	arr[i] = min;
-	min ++;
-}
-  */
 	for (i = min; i <= max; i++)
 	{
-		arr[i - min] = i; 
+		arr[i - min] = i;
 	}
 	return (arr);
 }
