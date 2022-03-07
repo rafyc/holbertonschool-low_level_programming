@@ -33,6 +33,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (ptr->name == 0 || ptr->owner == 0)
 	{
 		free(ptr);
+		free(ptr->owner);
 		free(ptr->name);
 		return (NULL);
 	}
