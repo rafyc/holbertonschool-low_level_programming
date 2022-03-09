@@ -3,40 +3,33 @@
 #include "3-calc.h"
 
 /**
- *  - Struct op
- *
- * @op: The operator
- * @f: The function associated
+ * main - main
+ * @argc: param1
+ * @argv: param2
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
 	int x;
 	int y;
-	int w;
-
-	printf("%d\n", argc);
 
 	if (argc != 4)
 	{
 		printf("1Error\n");
-		exit (98);
+		exit(98);
 	}
 
-	(void)argc;
-	
-	w = atoi(argv[2]);
-
-	if (w != '+' || w != '-' || w != '*' || w != '%' || w != '/')
+	if (get_op_func(argv[2]) == NULL || argv[2][1] != '\0')
 	{
 		printf("2Error\n");
-		exit (99);
+		exit(99);
 	}
 
 
 	x = atoi(argv[1]);
 	y = atoi(argv[3]);
 
-	printf ("%d\n", get_op_func(argv[2])(x, y));
+	printf("%d\n", get_op_func(argv[2])(x, y));
 	return (0);
 }
