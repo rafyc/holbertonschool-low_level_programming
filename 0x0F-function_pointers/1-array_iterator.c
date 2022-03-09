@@ -4,6 +4,7 @@
 /**
  * array_iterator - main proto
  * @array: param1
+ * @action : param3
  * @size: param2
  * Return: Nothing.
  */
@@ -13,7 +14,8 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	size_t i = 0;
 
 	while (i < size)
-	{	i++;
+	{
 		action(array[i]);
+		i++;
 	}
 }
