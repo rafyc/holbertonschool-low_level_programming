@@ -16,13 +16,13 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("1Error\n");
+		printf("Error\n");
 		exit(98);
 	}
 
 	if (get_op_func(argv[2]) == NULL || argv[2][1] != '\0')
 	{
-		printf("2Error\n");
+		printf("Error\n");
 		exit(99);
 	}
 
