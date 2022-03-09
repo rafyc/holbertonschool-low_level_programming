@@ -15,6 +15,8 @@ int main(int argc, char *argv[])
 	int y;
 	int w;
 
+	printf("%d\n", argc);
+
 	if (argc != 4)
 	{
 		printf("1Error\n");
