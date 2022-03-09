@@ -2,9 +2,10 @@
 #include "function_pointers.h"
 
 /**
- * int_index - 
- * @elem: the integer to check
- *
+ * int_index - main function
+ * @array: param1
+ * @size: param2
+ * @cmp: param3
  * Return: 0 if false, something else otherwise.
  */
 
@@ -12,19 +13,16 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i = 0;
 
-	if (size != 0 && cmp =! NULL)
+	if (size && array && cmp)
 	{
 		if (size <= 0)
-			return(-1);
+			return (-1);
 
 		for (i = 0; i < size ; i++)
 		{
-			cmp(array[i]);
-			if (cmp != NULL)
-			{
+			if (cmp(array[i]) != 0)
 				break;
-			}
 		}
-		return(i);
 	}
+	return (i);
 }
