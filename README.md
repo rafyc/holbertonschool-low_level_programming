@@ -23,4 +23,4 @@ The list of projects contained follows :
 * [0x0C. Python - almost a circle](./0x0C-python-almost_a_circle)
 ## Author :black_nib:
 
-* __Raphaël Chemouni_
+* __Raphaël Chemouni__
