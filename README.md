@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="50%" height="50%" src="https://blog.holbertonschool.com/wp-content/uploads/2020/04/unnamed-2.png"
+    <img width="20%" height="20%" src="https://blog.holbertonschool.com/wp-content/uploads/2020/04/unnamed-2.png"
 </p>
 
 # Projects holbertonschool-higher_level_programming :woman_student:
