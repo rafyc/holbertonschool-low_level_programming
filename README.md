@@ -34,4 +34,4 @@ The list of projects contained follows :
 * [0x1A. C - hash tables](./0x1A-hash_tables)
 ## Author :black_nib:
 
-* __Raphaël Chemouni__
+* _Raphaël CHEMOUNI_
