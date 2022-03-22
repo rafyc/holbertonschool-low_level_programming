@@ -2,7 +2,7 @@
 
 /**
  * print_listint - main function
- * @h: param1
+ * @h: param1.
  * Return: size_t type
  */
 
