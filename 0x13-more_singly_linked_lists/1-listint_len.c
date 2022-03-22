@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * listint_listint - main function
+ * listint_len - main function
  * @h: param1
  * Return: size_t type
  */
