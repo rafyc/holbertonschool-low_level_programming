@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * delete_nodeint_at_index - main function
+ * @head: Param 1
+ * @index: Param2
+ * Return: int
  */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
@@ -18,8 +19,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	if (index == 0)
 	{
 		*head = (*head)->next;
-		n = (*head)->n;
 		free (count);
+		return(1);
 	}
 	while (i < index - 1)
 	{
@@ -33,5 +34,4 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	count->next = temp->next;
 	free(temp);
 	return(1);
-	}
 }
