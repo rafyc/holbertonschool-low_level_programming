@@ -2,9 +2,10 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * set_bit - check the code
+ * @n: param1
+ * @index: param2
+ * Return: int
  */
 
 int set_bit(unsigned long int *n, unsigned int index)
@@ -13,6 +14,5 @@ int set_bit(unsigned long int *n, unsigned int index)
 		return (-1);
 
 	*n = *n | (1 << index); 
-	return(1)
-
+	return (1)
 }
