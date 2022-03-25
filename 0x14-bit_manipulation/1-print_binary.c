@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_binary - check the code
+ * @n: param 1
+ * Return: nothing.
  */
 
 void print_binary(unsigned long int n)
