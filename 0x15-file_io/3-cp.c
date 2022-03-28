@@ -24,10 +24,10 @@ int main(int argc, char *argv[])
 				"Error: Can't read from file %s\n", argv[1]), exit(98);
 	}
 
-	cpto = open(argv[2],O_TRUNC | O_WRONLY | O_CREAT, 0664);
+	cpto = open(argv[2], O_TRUNC | O_WRONLY | O_CREAT, 0664);
 	if (cpto == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
 
 	n = read(cpfrom, buff, 1024);
