@@ -9,8 +9,8 @@
 
 int main(int argc, char *argv[])
 {
-	int cpfrom, closecpfrom, cpto, closecpto, n;
-	char *buff[1024];
+	int cpfrom, closecpfrom, cpto, closecpto, r, w;
+	char buff[1024];
 
 	if (argc != 3)
 	{
@@ -30,11 +30,11 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
 
-	n = read(cpfrom, buff, 1024);
-
-	while (n)
+	while ((r = read(cpfrom, buff, 1024)) > 0)
 	{
-		write(cpto, buff, n);
+		w = write(cpto, buff, r);
+		if (w == -1)
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
 
 	closecpfrom = close(cpfrom);
