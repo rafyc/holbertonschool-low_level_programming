@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * create_file - main function
@@ -24,7 +25,7 @@ int create_file(const char *filename, char *text_content)
 		i++;
 
 	if (text_content != NULL)
-		write(op, text_content, i - 1);
+		write(op, text_content, strlen(text_content));
 
 	close(op);
 	return (1);
