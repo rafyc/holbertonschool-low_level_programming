@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * create_file - main function
+ * append_text_to_file - main function
  * @filename: param1
  * @text_content: param2
  * Return: int
@@ -15,7 +15,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 
-	op = open(filename, O_TRUNC | O_APPEND);
+	op = open(filename, O_APPEND);
 
 	if (op == -1)
 		return (-1);
