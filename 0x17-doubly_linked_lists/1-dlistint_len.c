@@ -1,6 +1,6 @@
 /**
- * main - check the code
- *
+ * dlistint_len - check the code
+ * @h: main function.
  * Return: Always EXIT_SUCCESS.
  */
 
