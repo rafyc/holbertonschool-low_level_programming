@@ -1,7 +1,7 @@
 /**
  * get_dnodeint_at_index - main function
  * @head: param1
- * index: param2
+ * @index: param2
  * Return: nothing
  */
 
@@ -16,6 +16,9 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 	while (count < index)
 	{
+		if (head == NULL)
+			return (NULL);
+
 		head = head->next;
 		count++;
 	}
