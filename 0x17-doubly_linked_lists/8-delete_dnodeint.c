@@ -52,17 +52,13 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		free(tmp);
 		return (1);
 	}
-	while (i < index - 1)
+	for (i = 0; i < index; i++)
 	{
-
 		tmp = tmp->next;
-		i++;
 	}
+	tmp->prev->next = tmp->next;
 	if (tmp->next)
-	{
-		tmp->next = tmp->next->next;
-		free(tmp->next->prev);
-		tmp->next->prev = tmp;
-	}
+		tmp->next->prev = tmp->prev;
+	free(tmp);
 	return (1);
 }
