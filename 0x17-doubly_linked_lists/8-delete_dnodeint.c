@@ -1,64 +1,34 @@
 #include "lists.h"
 
 /**
- * dlistint_len - check the code
- * @h: main function.
- * Return: Always EXIT_SUCCESS.
- */
-
-size_t dlistint_len(const dlistint_t *h)
-{
-	int i = 0;
-
-	if (h == NULL)
-	{
-		return (0);
-	}
-	while (h != NULL)
-	{
-		h = h->next;
-		i++;
-	}
-	return (i);
-}
-
-/**
- * delete_dnodeint_at_index - main function.
- * @head: param1.
- * @index: param2.
+ * delete_dnodeint_at_index - deletes the node at index
+ * @head: first node of the list
+ * @index: the index of the node to delete
  * Return: 1 if it succeeded, -1 if it failed
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	size_t len = dlistint_len(*head);
+	unsigned int count = 0;
 	dlistint_t *tmp = *head;
-	unsigned int i = 0;
 
-	if (len < index || *head == NULL)
-		return (-1);
-	if (index == 0)
+	if (*head)
 	{
-		(*head) = tmp->next;
-		if (*head)
-			(*head)->prev = NULL;
-		free(tmp);
-		return (1);
-	}
-	if (index == len)
-	{
-		while (tmp->next)
+		while (index > count)
+		{
 			tmp = tmp->next;
-		tmp->prev->next = NULL;
+			count++;
+			if (!tmp)
+				return (-1);
+		}
+		if (tmp->prev)
+			tmp->prev->next = tmp->next;
+		else
+			*head = tmp->next;
+		if (tmp->next)
+			tmp->next->prev = tmp->prev;
 		free(tmp);
+
 		return (1);
 	}
-	for (i = 0; i < index; i++)
-	{
-		tmp = tmp->next;
-	}
-	tmp->prev->next = tmp->next;
-	if (tmp->next)
-		tmp->next->prev = tmp->prev;
-	free(tmp);
-	return (1);
+	return (-1);
 }
