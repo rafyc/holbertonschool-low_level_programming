@@ -10,7 +10,6 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-
 	unsigned long int index;
 	hash_node_t *entry, *tmp;
 
@@ -32,18 +31,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 		tmp = tmp->next;
 	}
-
 	entry = malloc(sizeof(hash_node_t));
 	if (entry == NULL)
 		return (0);
-
 	entry->key = strdup(key);
 	if (entry->key == NULL)
 	{
 		free(entry);
 		return (0);
 	}
-
 	entry->value = strdup(value);
 	if (entry->value == NULL)
 	{
