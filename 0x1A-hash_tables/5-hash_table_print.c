@@ -9,7 +9,7 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i = 0;
-	hash_node_t *tmp;
+	hash_node_t *tmp = NULL;
 	char *str = "";
 	char *sign = ", ";
 
